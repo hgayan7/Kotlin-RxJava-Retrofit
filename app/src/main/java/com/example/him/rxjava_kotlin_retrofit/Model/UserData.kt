@@ -5,6 +5,8 @@ import com.google.gson.annotations.SerializedName
 /**
  * Created by him on 2/11/2018.
  */
+//kotlin data class generated from json response
+
 data class UserData(
 
         @SerializedName("login") val login: String = "",

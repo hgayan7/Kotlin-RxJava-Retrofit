@@ -34,14 +34,15 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
     private fun handleResponse(list: List<UserData>) {
 
         mAndroidArrayList = ArrayList(list)
         adapter = UserAdapter(mAndroidArrayList!!, this)
-
+        //setting the adpater
         recyclerView.adapter = adapter
     }
+
+    //adapter for recyclerview
     private class UserAdapter(items:List<UserData>,context: Context):RecyclerView.Adapter<UserAdapter.MyViewholder>(){
 
         var item=items

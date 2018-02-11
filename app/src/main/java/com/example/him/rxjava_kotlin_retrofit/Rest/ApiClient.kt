@@ -11,6 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
  */
 class ApiClient {
 
+    //base url ends with '/'
     val BASE_URL="https://api.github.com/"
     val client:ApiInterface
 
