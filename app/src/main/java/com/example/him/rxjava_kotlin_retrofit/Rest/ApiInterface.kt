@@ -9,6 +9,7 @@ import retrofit2.http.GET
  */
 interface ApiInterface {
 
+    //GET request from server with endpoint "users"
     @GET("users")
     fun getUserData():Observable<List<UserData>>
 
